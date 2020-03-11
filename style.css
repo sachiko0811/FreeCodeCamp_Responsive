@@ -62,7 +62,7 @@
     text-decoration: none;
   }
   
-  ul{
+  nav > ul{
     width: 35vw;
     list-style: none;
     display: flex;
@@ -181,12 +181,14 @@
   
   section#pricing{
     margin-top: 60px;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
     justify-content: center;
   }
   
   .product{
-    position: block;
+    /* position: block; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,11 +199,11 @@
     border-radius: 3px;
   }
   
-  .container2{
+  /* .container2{
     position: relative;
     display: flex;
     flex-direction: row;
-  }
+  } */
   
   .level{
     background-color: #ddd;
@@ -290,7 +292,6 @@
   }
   
   
-  
   /* footer > ul{ */
   /*   list-style-type: disc; */
   /*   margin-block-start: 1em;
@@ -299,3 +300,110 @@
     margin-inline-end: 0;
     padding-inline-start: 40px;
   } */
+
+  @media all and (max-width: 375px){
+
+    header#header{
+        top: 0;
+        min-height: 75px;
+        padding: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #eee;
+        z-index: 1;
+      }
+
+      nav#nav-bar{
+        text-align: center;
+        /* width: 100vw; */
+      }
+
+      nav > ul{
+        width: 35vw;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-weight: 400;
+      }
+      
+      nav > li{
+        margin-left: 10px;
+        cursor: pointer;
+        display: list-item;
+        padding-bottom: 5px;
+      }
+
+
+
+    img#header-img{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 0px 0px;
+      }
+
+      div.logo{
+        width: 75vw;
+        margin-top:20px;
+        margin-left: 15vw;
+        text-align: center;
+      }
+
+      nav#nav-bar{
+        width: 35vw;
+      }
+      
+      nav > ul{
+        width: 35vw;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-weight: 400;
+      }
+      
+      nav > li{
+        margin-left: 10px;
+        cursor: pointer;
+        display: list-item;
+        padding-bottom: 5px;
+      }
+
+      .grid{
+          margin-bottom: 10vh;
+      }
+
+      .icon{
+          width: 20vw;
+          padding-right: 20vw;
+      }
+
+      section#pricing{
+        margin-top: 60px;
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      div.product{
+          position: block;
+          align-self: center;
+          width: 70vw;
+          height: 40vh;
+      }
+
+      iframe{
+        max-width: 350px;
+        width: 100%;
+      }
+
+
+  }
