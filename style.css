@@ -264,6 +264,7 @@
   
   footer > ul > li{
     padding: 0 10px;
+    list-style: none;
   }
   
   /* footer > span{
@@ -283,12 +284,15 @@
   
   .footer-span{
     font-size: 14px;
-    display: inline-block;
-    margin-left: 30%;
+    /* display: inline-block; */
+    /* margin-left: 30%; */
     justify-content: flex-end;
     margin-top: 5px;
-    /* float: right; */
+    float: right;
+    width: 100%;
+    text-align: right;
     color: #444;
+    background-color: #ddd;
   }
   
   
@@ -300,6 +304,10 @@
     margin-inline-end: 0;
     padding-inline-start: 40px;
   } */
+
+  /* ================================
+    FOR iPhone X
+  ================================= */
 
   @media all and (max-width: 375px){
 
@@ -322,10 +330,11 @@
       }
 
       nav > ul{
+        margin-top: 10px;
         width: 35vw;
         list-style: none;
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
         justify-content: space-around;
         font-weight: 400;
       }
@@ -337,7 +346,12 @@
         padding-bottom: 5px;
       }
 
-
+      h2.handcraft{
+        font-size: 15px;
+        margin-bottom: 20px;
+        word-wrap: break-word; /* */
+        font-weight: 900;
+      }
 
     img#header-img{
         width: 100%;
@@ -385,6 +399,16 @@
           padding-right: 20vw;
       }
 
+      section#hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 15vh;
+      }
+
       section#pricing{
         margin-top: 60px;
         /* position: relative; */
@@ -405,5 +429,48 @@
         width: 100%;
       }
 
+      footer{
+        /*   display: flex;
+          flex-direction: column; */
+          width: 100%;
+          height: 50px;
+          margin-top: 30px;
+          background-color: #ddd;
+          padding: 20px 0px;
+        }
+        
+        a.footer{
+          text-decoration: none;
+          color: #000;
+        }
+        
+        footer > ul > li{
+          padding: 0 10px;
+          list-style: none;
+        }
+        
+        .footer-ul{
+          float: right;
+          font-weight: 900;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+        
+        .footer-span{
+          background-color: #ddd;
+          /* padding: 10px 60px; */
+          font-size: 12px;
+          justify-content: flex-end;
+          margin-top: 5px;
+          float: right;
+          margin-left: 0;
+          padding-left: 34px;
+          /* margin-left: 30%; */
+          /* justify-content: flex-end; */
+          /* margin-top: 5px; */
+          color: #444;
+          
+        }
 
   }
